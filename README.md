@@ -4,7 +4,7 @@ Landing de marketing en `laborin.app`. El frontend de la app se sirve por separa
 
 ## Rama
 
-Trabajo local en `MVP`, creada desde `develop`. No se pushea a `main` sin aprobación.
+El trabajo se desarrolla en `MVP` y se mergea a `main` solo con aprobación.
 
 ## Desarrollo
 
@@ -20,7 +20,7 @@ npm run lint
 npm run build
 ```
 
-El output queda en `out/` y es lo que monta nginx como `/var/www/landing`.
+El output queda en `out/` y se publica en `/home/Startup/servidor-de-correo/landing`, montado por nginx como `/var/www/landing`.
 
 ## Estructura
 
