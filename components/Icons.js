@@ -122,6 +122,24 @@ export function ChatCircle(props) {
   );
 }
 
+export function Close(props) {
+  return (
+    <Svg {...props}>
+      <path d="M6 6l12 12" />
+      <path d="M18 6 6 18" />
+    </Svg>
+  );
+}
+
+export function Send(props) {
+  return (
+    <Svg {...props}>
+      <path d="m4 12 16-8-6 16-2.5-6.5L4 12Z" />
+      <path d="m11.5 13.5 4-4" />
+    </Svg>
+  );
+}
+
 export function Device(props) {
   return (
     <Svg {...props}>

@@ -1,4 +1,5 @@
 import { Bricolage_Grotesque, Inter } from 'next/font/google';
+import ChatWidget from '@/components/ChatWidget';
 import './tokens.css';
 import './globals.css';
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
           Saltar al contenido
         </a>
         {children}
+        <ChatWidget />
       </body>
     </html>
   );
