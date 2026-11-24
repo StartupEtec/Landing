@@ -1,4 +1,5 @@
 const APP_URL = 'https://app.laborin.app/';
+const TELEGRAM_URL = 'https://t.me/Laborin_Bot?start=landing';
 
 export default function Footer() {
   return (
@@ -10,6 +11,7 @@ export default function Footer() {
           <a href="#que-es">Qué es</a>
           <a href="#preguntas">Preguntas</a>
           <a href={APP_URL}>Ir a la app</a>
+          <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">Telegram</a>
         </nav>
       </div>
     </footer>

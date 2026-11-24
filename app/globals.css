@@ -1082,6 +1082,33 @@ html {
   color: #c4324a;
 }
 
+.chat-telegram {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.chat-telegram a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--primary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .chat-telegram a:hover {
+    color: var(--primary-hover);
+  }
+}
+
 .chat-form {
   display: flex;
   gap: 8px;

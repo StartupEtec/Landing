@@ -1,10 +1,11 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ChatCircle, Close, Send } from './Icons';
+import { ArrowUpRight, ChatCircle, Close, Send } from './Icons';
 
 const ENDPOINT = process.env.NEXT_PUBLIC_CHAT_ENDPOINT || '/chat/api/channels/web';
 const STORAGE_KEY = 'laborin-chat-session';
+const TELEGRAM_URL = 'https://t.me/Laborin_Bot?start=landing';
 
 function formatMessage(text) {
   const parts = String(text ?? '')
@@ -184,6 +185,13 @@ export default function ChatWidget() {
                 {error}
               </p>
             )}
+          </div>
+
+          <div className="chat-telegram">
+            <span>¿Querés seguir en Telegram?</span>
+            <a href={TELEGRAM_URL} target="_blank" rel="noreferrer">
+              Abrir el bot <ArrowUpRight size={16} />
+            </a>
           </div>
 
           <form className="chat-form" onSubmit={handleSubmit}>
